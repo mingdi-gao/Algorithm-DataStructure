@@ -18,6 +18,7 @@ namespace SingleLinkedListProject
 
             while (true)
             {
+                Console.WriteLine();
                 Console.WriteLine("1.Display List");
                 Console.WriteLine("2.Count the number of nodes");
                 Console.WriteLine("3.Search for an element");
@@ -87,6 +88,20 @@ namespace SingleLinkedListProject
                         Console.WriteLine("Enter the position");
                         k = Convert.ToInt32(Console.ReadLine());
                         list.InsertAtPosition(data, k);
+                        break;
+                    case 9:
+                        list.DeleteFirstNode();
+                        break;
+                    case 10:
+                        list.DeleteLastNode();
+                        break;
+                    case 11:
+                        Console.WriteLine("Enter the element to be deleted");
+                        data = Convert.ToInt32(Console.ReadLine());
+                        list.DeleteNode(data);
+                        break;
+                    case 12:
+                        list.ReverseList();
                         break;
                     case 19:
                         break;

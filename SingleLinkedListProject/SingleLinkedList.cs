@@ -23,11 +23,11 @@ namespace SingleLinkedListProject
                 Console.WriteLine("List is empty");
                 return;
             }
-            Console.WriteLine("List is :    ");
+            Console.Write("List is :    ");
             p = startPointer;
             while (p != null)
             {
-                Console.WriteLine(p.info + " ");
+                Console.Write(p.info + " ");
                 p = p.next;
             }
             Console.WriteLine();
@@ -130,10 +130,11 @@ namespace SingleLinkedListProject
             }
             while (p.next != null)
             {
-                if (p.next.info == data)
+                if (p.next.info == x)
                     break;
                 p = p.next;
             }
+
             if (p.next == null)
             {
                 Console.WriteLine(x + "is not in the linked list");
@@ -179,6 +180,81 @@ namespace SingleLinkedListProject
             return;
         }
 
+        public void DeleteFirstNode()
+        {
+            if (startPointer == null)
+                return;
+            startPointer = startPointer.next;
+        }
+
+        public void DeleteLastNode()
+        {
+            if (startPointer == null)
+                return;
+            if (startPointer.next == null)
+            {
+                startPointer = null;
+                return;
+            }
+            Node p = startPointer;
+            while (p.next.next != null)
+            {
+                p = p.next;
+            }
+            
+            p.next = null;
+        }
+
+        public void DeleteNode(int x)
+        {
+            if (startPointer == null)
+            {
+                Console.WriteLine("List is empty");
+                return;
+            }
+            
+            if (startPointer.info == x)
+            {
+                startPointer = startPointer.next;
+                return;
+            }
+
+            Node p = startPointer;
+            while (p.next != null)
+            {
+                if (p.next.info == x)
+                    break;
+                p = p.next;
+            }
+            if (p.next == null)
+            {
+                Console.WriteLine("Element  " + x + " not in list");
+            }
+            else
+            {
+                p.next = p.next.next;
+            }                        
+        }
+
+        public void ReverseList()
+        {
+            Node prev, p, next;
+            if (startPointer == null)
+            {
+                Console.WriteLine("List is empty");
+            }
+            prev = null;
+            p = startPointer;
+
+            while (p != null)
+            {
+                next = p.next;
+                p.next = prev;
+                prev = p;
+                p = next;
+            }
+            startPointer = prev;
+        }
         public void CreatList()
         {
             int i, n, data;

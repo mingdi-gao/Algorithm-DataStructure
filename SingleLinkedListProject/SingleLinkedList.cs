@@ -67,7 +67,7 @@ namespace SingleLinkedListProject
         public void InsertInBeginning(int data)
         {
             Node temp = new Node(data);
-            temp = startPointer;
+            temp.next = startPointer;
             startPointer = temp;
         }
 
@@ -91,6 +91,94 @@ namespace SingleLinkedListProject
             p.next = temp;
         }
 
+        public void InsertAfter(int data, int x)
+        {
+            Node p = startPointer;
+            while (p != null)
+            {
+                if (p.info == x)
+                    break;
+                p = p.next;
+            }
+
+            if (p == null)
+                Console.WriteLine(x + " is not in this linked list");
+            else
+            {
+                Node temp = new Node(data);
+                temp.next = p.next;
+                p.next = temp;
+            }
+        }
+
+        public void InsertBefore(int data, int x)
+        {
+            Node p = startPointer;
+
+            if (startPointer == null)
+            {
+                Console.WriteLine("List is empty");
+                return;
+            }
+
+            if (x == startPointer.info)
+            {
+                Node temp = new Node(data);
+                temp.next = startPointer;
+                startPointer = temp;
+                return;
+            }
+            while (p.next != null)
+            {
+                if (p.next.info == data)
+                    break;
+                p = p.next;
+            }
+            if (p.next == null)
+            {
+                Console.WriteLine(x + "is not in the linked list");
+            }
+            else
+            {
+                Node temp = new Node(data);
+                temp.next = p.next;
+                p.next = temp;
+            }
+        }
+
+        public void InsertAtPosition(int data, int k)
+        {
+            int i = 0;
+
+            if (k == 1)
+            {
+                Node temp = new Node(data);
+                temp.next = startPointer;
+                startPointer = temp;
+                return;
+            }
+
+            Node p = startPointer;
+            
+            for (i = 1; i < k - 1 && p != null; i++)
+            {
+                p = p.next;
+            }
+            
+            if (p == null)
+            {
+                Console.WriteLine("You can insert only upto " + i + "th position");
+            }
+            else
+            {
+                Node temp = new Node(data);
+                temp.next = p.next;
+                p.next = temp;
+            }
+
+            return;
+        }
+
         public void CreatList()
         {
             int i, n, data;
@@ -100,8 +188,12 @@ namespace SingleLinkedListProject
 
             if (n == 0)
                 return;
-
-
+            for (i = 1; i <=n; i++)
+            {
+                Console.WriteLine("Enter the element to be inserted : ");
+                data = Convert.ToInt32(Console.ReadLine());
+                InsertAtEnd(data);
+            }
         }
     }
 }

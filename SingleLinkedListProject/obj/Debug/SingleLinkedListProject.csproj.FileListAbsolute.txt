@@ -1,2 +1,7 @@
 C:\Users\sxg359\study\Algorithm-DataStructure\SingleLinkedListProject\obj\Debug\SingleLinkedListProject.csprojResolveAssemblyReference.cache
 C:\Users\sxg359\study\Algorithm-DataStructure\SingleLinkedListProject\obj\Debug\SingleLinkedListProject.csproj.CoreCompileInputs.cache
+C:\Users\sxg359\study\Algorithm-DataStructure\SingleLinkedListProject\bin\Debug\SingleLinkedListProject.exe.config
+C:\Users\sxg359\study\Algorithm-DataStructure\SingleLinkedListProject\bin\Debug\SingleLinkedListProject.exe
+C:\Users\sxg359\study\Algorithm-DataStructure\SingleLinkedListProject\bin\Debug\SingleLinkedListProject.pdb
+C:\Users\sxg359\study\Algorithm-DataStructure\SingleLinkedListProject\obj\Debug\SingleLinkedListProject.exe
+C:\Users\sxg359\study\Algorithm-DataStructure\SingleLinkedListProject\obj\Debug\SingleLinkedListProject.pdb

@@ -58,8 +58,38 @@ namespace SingleLinkedListProject
                         list.Search(data);
                         break;
                     case 4:
+                        Console.WriteLine("Enter the element to be inserted");
+                        data = Convert.ToInt32(Console.ReadLine());
+                        list.InsertInBeginning(data);
                         break;
-
+                    case 5:
+                        Console.WriteLine("Enter the element to be inserted");
+                        data = Convert.ToInt32(Console.ReadLine());
+                        list.InsertAtEnd(data);
+                        break;
+                    case 6:
+                        Console.WriteLine("Enter the element to be inserted");
+                        data = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the value of the specific node");
+                        x = Convert.ToInt32(Console.ReadLine());
+                        list.InsertAfter(data, x);
+                        break;
+                    case 7:
+                        Console.WriteLine("Enter the element to be inserted");
+                        data = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the value of the specific node");
+                        x = Convert.ToInt32(Console.ReadLine());
+                        list.InsertBefore(data, x);
+                        break;
+                    case 8:
+                        Console.WriteLine("Enter the element to be inserted");
+                        data = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the position");
+                        k = Convert.ToInt32(Console.ReadLine());
+                        list.InsertAtPosition(data, k);
+                        break;
+                    case 19:
+                        break;
                 }
             }
         }

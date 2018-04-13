@@ -5,3 +5,10 @@ C:\Users\sxg359\study\Algorithm-DataStructure\SingleLinkedListProject\bin\Debug\
 C:\Users\sxg359\study\Algorithm-DataStructure\SingleLinkedListProject\bin\Debug\SingleLinkedListProject.pdb
 C:\Users\sxg359\study\Algorithm-DataStructure\SingleLinkedListProject\obj\Debug\SingleLinkedListProject.exe
 C:\Users\sxg359\study\Algorithm-DataStructure\SingleLinkedListProject\obj\Debug\SingleLinkedListProject.pdb
+C:\Users\gaomi\repo\Algorithm-DataStructure\SingleLinkedListProject\obj\Debug\SingleLinkedListProject.csprojResolveAssemblyReference.cache
+C:\Users\gaomi\repo\Algorithm-DataStructure\SingleLinkedListProject\obj\Debug\SingleLinkedListProject.csproj.CoreCompileInputs.cache
+C:\Users\gaomi\repo\Algorithm-DataStructure\SingleLinkedListProject\obj\Debug\SingleLinkedListProject.exe
+C:\Users\gaomi\repo\Algorithm-DataStructure\SingleLinkedListProject\obj\Debug\SingleLinkedListProject.pdb
+C:\Users\gaomi\repo\Algorithm-DataStructure\SingleLinkedListProject\bin\Debug\SingleLinkedListProject.exe.config
+C:\Users\gaomi\repo\Algorithm-DataStructure\SingleLinkedListProject\bin\Debug\SingleLinkedListProject.exe
+C:\Users\gaomi\repo\Algorithm-DataStructure\SingleLinkedListProject\bin\Debug\SingleLinkedListProject.pdb

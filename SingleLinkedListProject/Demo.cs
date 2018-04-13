@@ -11,11 +11,8 @@ namespace SingleLinkedListProject
         static void Main(string[] args)
         {
             int choice, data, k, x;
-
             SingleLinkedList list = new SingleLinkedList();
-
             list.CreatList();
-
             while (true)
             {
                 Console.WriteLine();
@@ -102,6 +99,12 @@ namespace SingleLinkedListProject
                         break;
                     case 12:
                         list.ReverseList();
+                        break;
+                    case 13:
+                        list.BubbleSortExData();
+                        break;
+                    case 14:
+                        list.BubbleSortExLinks();
                         break;
                     case 19:
                         break;

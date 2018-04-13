@@ -12,7 +12,7 @@ namespace SingleLinkedListProject
 
         public SingleLinkedList()
         {
-            startPointer = null;   
+
         }
 
         public void DisplayList()
@@ -255,6 +255,53 @@ namespace SingleLinkedListProject
             }
             startPointer = prev;
         }
+
+
+        public void BubbleSortExData()
+        {
+            Node end, q, p;
+
+            for (end = null; end != startPointer.next; end = p)
+            {
+                for (p = startPointer; p.next != end; p = p.next)
+                {
+                    q = p.next;
+                    if (p.info > q.info)
+                    {
+                        int temp = p.info;
+                        p.info = q.info;
+                        q.info = temp;
+                    }
+                }
+
+            }
+        }
+
+        public void BubbleSortExLinks()
+        {
+            Node end, r, p, q, temp;
+
+            for (end = null; end != startPointer.next; end = p)
+            {
+                for (r = p = startPointer; p.next != end; r = p, p = p.next)
+                {
+                    q = p.next;
+                    if (p.info > q.info)
+                    {
+                        p.next = q.next;
+                        q.next = p;
+                        if (p != startPointer)
+                            r.next = q;
+                        else
+                            startPointer = q;
+                        temp = p;
+                        p = q;
+                        q = temp;
+                    }
+                }
+            }
+        }
+
         public void CreatList()
         {
             int i, n, data;

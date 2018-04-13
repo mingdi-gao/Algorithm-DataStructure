@@ -302,6 +302,46 @@ namespace SingleLinkedListProject
             }
         }
 
+        public SingleLinkedList Merge1(SingleLinkedList list)
+        {
+            SingleLinkedList mergeList = new SingleLinkedList();
+            mergeList.startPointer = Merge1(startPointer, list.startPointer);
+            return mergeList;
+        }
+
+        private Node Merge1(Node p1, Node p2)
+        {
+            Node startN, p , temp;
+            if (p1.info > p2.info)
+            {
+                startN = new Node(p2.info);
+                p2 = p2.next;
+            }
+            else
+            {
+                startN = new Node(p1.info);
+                p1 = p1.next;
+            }
+            p = startN;
+            while (p1 != null && p2 != null)
+            {
+                if (p1.info > p2.info)
+                {
+                    p.next = new Node(p2.info);
+                    p2 = p2.next;                   
+                }
+                else
+                {
+                    p.next = new Node(p1.info);
+                    p1 = p1.next;
+                }
+            }
+
+            return startN;
+        }
+
+
+
         public void CreatList()
         {
             int i, n, data;

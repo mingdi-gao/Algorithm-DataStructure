@@ -106,6 +106,9 @@ namespace SingleLinkedListProject
                     case 14:
                         list.BubbleSortExLinks();
                         break;
+                    case 15:
+                        list.Merge1();
+                        break;
                     case 19:
                         break;
                 }
